@@ -71,7 +71,8 @@
     			qa[46] = ["もう一度読み込んでください…","","","","1",""];
 
 				//初期設定
-				var count = Math.floor(Math.random() * qa.length);
+				//var count = Math.floor(Math.random() * qa.length);
+				var count = Math.floor((new Date()).getTime() / (100)) % qa.length;
 				//count = 0; //問題番号
 				q_sel = 3; //選択肢の数
 				//最初の問題
